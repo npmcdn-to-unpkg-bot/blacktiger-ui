@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<div class="frame" [class.shown]="authenticated">
+  <bt-banner></bt-banner>
+  <router-outlet></router-outlet>
+
+
+  <bt-navigation></bt-navigation>
+
+
+  <!--bt-information></bt-information-->
+</div>
+<ngl-modal header="Login" [(open)]="!authenticated">
+  <div body>
+    <ngl-form-element nglFormLabel="Brugernavn" class="slds-m-top--small">
+      <input type="text" placeholder="Indtast brugernavn" [required]="required" [(ngModel)]="username">
+    </ngl-form-element>
+    <ngl-form-element nglFormLabel="Kodeord" class="slds-m-top--small">
+      <input type="password" placeholder="Indtast kodeord" [required]="required" [(ngModel)]="password">
+    </ngl-form-element>
+  </div>
+  <button class="slds-button slds-button--neutral slds-button--brand" (click)="completeLogin()">Login</button>
+</ngl-modal>

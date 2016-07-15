@@ -1,0 +1,78 @@
+<div class="slds-container--large">
+  <div class="slds-p-around--large">
+    
+    <div class="slds-notify_container" *ngIf="commentAlertShown">
+      <ngl-notification type="alert" severity="info" (nglNotificationClose)="onClose($event)">
+        <h1 class="slds-text-heading--large">Nogen ønsker at svare</h1>
+      </ngl-notification>
+    </div>
+
+    <ngl-notification type="alert" severity="error" class="slds-m-bottom--large">
+      <h2>Der er ingen transmission nu, og der er heller ingen der har ringet op nu for at lytte med.</h2>
+    </ngl-notification>
+
+    <ngl-notification type="alert" severity="error" class="slds-m-bottom--large">
+      <h2>Der sendes ingen lyd ud til lytterne!</h2>
+    </ngl-notification>
+
+    <h2 class="slds-site-text-heading slds-text-heading--large slds-m-bottom--small">{{listeners.length}} lyttere</h2>
+
+    <table ngl-datatable [data]="listeners" [striped]="true">
+      <ngl-datatable-column heading="Telefonnummer" key="number"></ngl-datatable-column>
+      <ngl-datatable-column heading="Navn" key="name">
+        <template nglDatatableCell let-row="row">
+          <div class="slds-truncate">
+            <a href="#">{{row.name}}</a>
+            <ngl-icon icon="comments" align="left" *ngIf="row.commentRequested" size="small"></ngl-icon>
+          </div>
+        </template>
+      </ngl-datatable-column>
+      <ngl-datatable-column heading="Opkald" key="calls">
+        <template nglDatatableCell>
+          <div class="slds-truncate">3</div>
+        </template>
+      </ngl-datatable-column>
+      <ngl-datatable-column heading="Minutter" key="minutes">
+        <template nglDatatableCell>
+          <div class="slds-truncate">3</div>
+        </template>
+      </ngl-datatable-column>
+      <ngl-datatable-column heading="" key="icons">
+        <template nglDatatableCell>
+          <div class="slds-float--right">
+            <ngl-icon icon="chat" size="x-small"></ngl-icon>
+            <ngl-icon icon="close" size="x-small"></ngl-icon>
+          </div>
+        </template>
+      </ngl-datatable-column>
+
+    </table>
+    
+
+    <h2 class="slds-site-text-heading slds-text-heading--large slds-m-top--x-large slds-m-bottom--small">{{history.length}} afsluttede opkald</h2>
+    <table ngl-datatable [data]="listeners" [striped]="true">
+      <ngl-datatable-column heading="Telefonnummer" key="number"></ngl-datatable-column>
+      <ngl-datatable-column heading="Navn" key="name">
+        <template nglDatatableCell let-value>
+          <div class="slds-truncate"><a href="#">{{value}}</a></div>
+        </template>
+      </ngl-datatable-column>
+      <ngl-datatable-column heading="Første Opkald" key="first_call">
+        <template nglDatatableCell>
+          <div class="slds-truncate">26/3-2016 15:54</div>
+        </template>
+      </ngl-datatable-column>
+      <ngl-datatable-column heading="Opkald" key="calls">
+        <template nglDatatableCell>
+          <div class="slds-truncate">3</div>
+        </template>
+      </ngl-datatable-column>
+      <ngl-datatable-column heading="Tid" key="minutes">
+        <template nglDatatableCell>
+          <div class="slds-truncate">3</div>
+        </template>
+      </ngl-datatable-column>
+      
+    </table>
+  </div>
+</div>

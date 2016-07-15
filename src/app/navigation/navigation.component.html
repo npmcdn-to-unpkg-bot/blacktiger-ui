@@ -1,0 +1,33 @@
+<div class="site-navigation site-navigation--has-search" [class.is-open]="shown">
+
+  <nav id="navigation" role="navigation" tabindex="-1">
+    <ul class="slds-list--vertical slds-has-block-links">
+
+      <li class="slds-list__item" *ngFor="let entry of entries" [ngClass]="{'is-closed': !isOpen(entry), 'is-open': isOpen(entry), 'slds-is-selected slds-is-active': isActive(entry)}"
+        data-slds-nav-children="entry.children !== null">
+        <a (click)="onEntryClick(entry)">
+          <span class="slds-media slds-media--center">
+          <span class="slds-media__body">{{entry.title}}</span>
+          <span class="slds-media__figure--reverse" *ngIf="entry.children !== null">
+            <svg aria-hidden="true" class="slds-icon icon__svg icon-utility-right slds-icon--small slds-icon-text-default">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#right"></use>
+              </svg>
+              </span>
+          </span>
+        </a>
+        <ul class="slds-list--vertical slds-has-block-links slds-is-nested" *ngIf="entry.children !== null">
+          <li class="slds-list__item" *ngFor="let subentry of entry.children" [ngClass]="{'slds-is-selected slds-is-active': isActive(subentry)}">
+            <a (click)="onEntryClick(subentry)">
+              <span class="slds-media slds-media--center">
+            <span class="slds-media__body">{{subentry.title}}</span>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+
+    </ul>
+  </nav>
+</div>

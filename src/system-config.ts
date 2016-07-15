@@ -7,10 +7,30 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'ng-lightning/ng-lightning': 'vendor/ng-lightning',
+  'ts-helpers': 'vendor/ts-helpers',
+  'tether': 'vendor/tether',
+  'stompjs': 'vendor/stompjs'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'ng-lightning/ng-lightning': {
+      main: 'ng-lightning.js',
+      format: 'cjs'
+    },
+  'tether': {
+      main: 'dist/js/tether.js',
+      format: 'cjs'
+    },
+  'ts-helpers': {
+      main: 'index.js',
+      format: 'cjs'
+    },
+  'stompjs': {
+    main: 'lib/stomp.js',
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34,6 +54,14 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/banner',
+  'app/navigation',
+  'app/footer',
+  'app/information',
+  'app/transmission',
+  'app/settings/general',
+  'app/settings/listener',
+  'app/settings/contact',
   /** @cli-barrel */
 ];
 

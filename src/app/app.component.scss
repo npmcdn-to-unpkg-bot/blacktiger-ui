@@ -1,0 +1,12 @@
+//@import '../../node_modules/@salesforce-ux/design-system/scss/config';
+//@import './assets/styles/variables';
+
+.frame {
+    opacity: 0;
+    transition:opacity 300ms ease;
+    transition-delay: 50ms;
+}
+
+.shown {
+    opacity: 1;
+}

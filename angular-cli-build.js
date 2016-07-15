@@ -15,7 +15,12 @@ module.exports = function(defaults) {
       'es6-shim/es6-shim.js',
       'reflect-metadata/**/*.+(ts|js|js.map)',
       'rxjs/**/*.+(js|js.map)',
-      '@angular/**/*.+(js|js.map)'
+      '@angular/**/*.+(js|js.map)',
+      'ng-lightning/ng-lightning.js',
+      'ng-lightning/**/*.+(js|js.map)',
+      'ts-helpers/index.js',
+      'tether/dist/js/tether.js',
+      'stompjs/lib/stomp.js'
     ]
   });
 };

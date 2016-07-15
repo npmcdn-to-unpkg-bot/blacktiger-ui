@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 272.2 190.5"
+   id="svg3461"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg">
+  <metadata
+     id="metadata3479">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3477" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="980"
+     inkscape:window-height="719"
+     id="namedview3475"
+     showgrid="false"
+     inkscape:zoom="1.0102865"
+     inkscape:cx="67.236339"
+     inkscape:cy="95.25"
+     inkscape:window-x="200"
+     inkscape:window-y="86"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3461" />
+  <style
+     id="style3463">.style0{fill: #009DDC;}.style1{fill: #FFFFFF;}.style2{fill-rule: evenodd;clip-rule: evenodd;fill: #FFFFFF;}</style>
+  <path
+     d="M113.3 20.8C122 11.6 134.3 6 147.8 6c18 0 33.6 10 42 24.9 7.3-3.2 15.3-5 23.7-5 32.4 0 58.7 26.5 58.7 59.2s-26.3 59.2-58.7 59.2c-4 0-7.8-.4-11.6-1.2-7.3 13.1-21.4 22-37.4 22-6.7 0-13.1-1.6-18.8-4.3-7.5 17.5-24.8 29.8-45 29.8-21.1 0-39-13.3-45.9-32-3 .6-6.1 1-9.3 1C20.3 159.4 0 138.9 0 113.5c0-17 9.1-31.8 22.7-39.8-2.8-6.4-4.3-13.5-4.3-21C18.4 23.6 42 0 71.2 0c17.2 0 32.4 8.1 42.1 20.8z"
+     class="style0"
+     id="path3465" />
+  <text
+     xml:space="preserve"
+     style="font-style:italic;font-variant:normal;font-weight:600;font-stretch:normal;font-size:60px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold Italic';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="43.552006"
+     y="109.3349"
+     id="text4338"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4340"
+       x="43.552006"
+       y="109.3349">Telesal</tspan></text>
+</svg>
