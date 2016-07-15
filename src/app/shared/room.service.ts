@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { IBaseEntity, BaseService } from './base.service';
 import { LoginService } from './login.service';
+import { IParticipant } from './participant.service';
 
 export interface IContact {
   name: string;
@@ -18,6 +19,7 @@ export interface IRoom extends IBaseEntity {
   hallNumber: string;
   phoneNumber: string;
   countryCallingCode: string;
+  participants: IParticipant[];
 }
 
 @Injectable()
